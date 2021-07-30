@@ -10,7 +10,7 @@ class APIRegisterUserTest extends TestCase
 {
     use RefreshDatabase;
 
-    private $endpoint = "http://roastandbrew-api.521.test/register";
+    private $endpoint;
     private $name;
     private $email;
     private $password;
@@ -23,6 +23,8 @@ class APIRegisterUserTest extends TestCase
        $this->email = 'john.doe@invajo.com';
        $this->password = 'secretPassword';
        $this->confirmPassword = 'secretPassword';
+
+       $this->endpoint = 'http://roastandbrew-api.521.test/register';
     }
 
     /** @test */
@@ -89,12 +91,11 @@ class APIRegisterUserTest extends TestCase
     public function a_guest_can_not_register_if_all_fields_are_missing()
     {
         $response = $this->json('post', $this->endpoint, []);
-
         $response->assertJsonValidationErrors([
-            'name' => [ 'The name field is missing' ],
-            'email' => [ 'The email field is required' ],
-            'password' => [ 'The password field is required' ],
-            'confirm_password' => [ 'The confirm password field is required' ],
+            'name',
+            'email',
+            'password',
+            'confirm_password',
         ]);
     }
 }
