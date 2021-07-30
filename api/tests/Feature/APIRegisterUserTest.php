@@ -10,7 +10,7 @@ class APIRegisterUserTest extends TestCase
 {
     use RefreshDatabase;
 
-    private $endpoint = "/register";
+    private $endpoint = "http://roastandbrew-api.521.test/register";
     private $name;
     private $email;
     private $password;
