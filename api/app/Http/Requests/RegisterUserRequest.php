@@ -6,6 +6,11 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class RegisterUserRequest extends FormRequest
 {
+    public function aithorize()
+    {
+        return true;
+    }
+
     public function rules()
     {
         return [
@@ -15,4 +20,18 @@ class RegisterUserRequest extends FormRequest
             'confirm_password' => 'required|same:password',
         ];
     }
+
+    public function userPayload() 
+    {
+        return collect($this->validated())
+            ->only([
+                'name',
+                'email',
+                'password',
+                'confirm_password'
+            ])
+            ->toArray();
+    }
+
+
 }

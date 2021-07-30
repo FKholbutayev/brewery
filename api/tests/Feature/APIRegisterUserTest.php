@@ -98,4 +98,18 @@ class APIRegisterUserTest extends TestCase
             'confirm_password',
         ]);
     }
+
+    /** @test */
+
+    public function a_guest_can_be_registered()
+    {
+        $response = $this->json('post', $this->endpoint, [
+            'name' => $this->name,
+            'email' => $this->email,
+            'password' => $this->password,
+            'confirm_password' => $this->confirmPassword,
+        ]);
+
+        $response->assertSuccessful();
+    }
 }

@@ -12,7 +12,9 @@ class AuthController extends Controller
 {
     public function register(RegisterUserRequest $request)
     {
-        dd($request->validated());
+        $user = User::create($request->userPayload());
+        
+        return response()->json('', 204); 
     }
 
     public function login() {
