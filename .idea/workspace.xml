@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74680ee9-30b9-4208-8f89-c0e9d8194751" name="Default Changelist" comment="" />
+    <list default="true" id="74680ee9-30b9-4208-8f89-c0e9d8194751" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/coffeeroast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coffeeroast.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/api/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -118,9 +131,12 @@
       <path value="$PROJECT_DIR$/api/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/api/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/api/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1t80ZOjrwCu25vyzMZPCOtknciZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -131,6 +147,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,11 +157,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622135465268</updated>
-      <workItem from="1622135466694" duration="907000" />
+      <workItem from="1622135466694" duration="11791000" />
+      <workItem from="1622736693663" duration="1489000" />
+      <workItem from="1622738678499" duration="3683000" />
+      <workItem from="1622792154185" duration="1435000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="539" y="366" key="NewPhpFileDialog" timestamp="1622188888541">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="539" y="366" key="NewPhpFileDialog/0.23.1440.825@0.23.1440.825" timestamp="1622188888541" />
+    <state x="385" y="173" width="670" height="670" key="search.everywhere.popup" timestamp="1622746036713">
+      <screen x="0" y="25" width="1440" height="817" />
+    </state>
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1622467135150" />
+    <state x="385" y="173" width="670" height="670" key="search.everywhere.popup/0.25.1440.817@0.25.1440.817" timestamp="1622746036713" />
   </component>
 </project>

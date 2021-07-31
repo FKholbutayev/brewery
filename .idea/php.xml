@@ -107,6 +107,8 @@
       <path value="$PROJECT_DIR$/api/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/api/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/api/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

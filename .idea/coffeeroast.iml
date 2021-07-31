@@ -30,7 +30,9 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/sanctum" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/mime-type-detection" />
