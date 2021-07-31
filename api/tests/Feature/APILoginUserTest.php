@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\User;
 
@@ -19,12 +18,6 @@ class APILoginUserTest extends TestCase
     public function setup():void
     {
         parent::setup(); 
-        
-        $this->user = User::factory()->create([
-            'name' => 'Rafa Nadal',
-            'email' => 'rafa.nadal@rollandgarros.com', 
-            'password' => 'secretPassword'
-        ]);
 
         $this->endpoint = 'http://roastandbrew-api.521.test/login';
 
@@ -86,5 +79,23 @@ class APILoginUserTest extends TestCase
             ->assertJson([
                 'error' => 'invalid_credentials'
             ]);
+    }
+
+    /** @test */
+
+    public function a_user_can_log_in_with_correct_credentials()
+    {
+        $this->user = User::factory()->create([
+            'name' => 'Rafa Nadal',
+            'email' => 'rafa.nadal@rollandgarros.com', 
+            'password' => bcrypt($password = 'secretPassword')
+        ]);
+
+        $response = $this->json('post', $this->endpoint, [
+            'email' => 'rafa.nadal@rollandgarros.com', 
+            'password' => 'secretPassword',
+        ]);
+        
+        $response->assertSuccessful();
     }
 }

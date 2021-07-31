@@ -31,8 +31,9 @@ class AuthController extends Controller
         return $this->loginProxy->attempLogin($request->loginPayload());
     }
 
-    public function logout() {
-
+    public function logout() 
+    {
+        return $this->loginProxy->logout();
     }
 }
 
